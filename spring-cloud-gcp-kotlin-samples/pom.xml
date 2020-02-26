@@ -13,7 +13,7 @@
 
 	<groupId>org.springframework.cloud</groupId>
 	<artifactId>spring-cloud-gcp-kotlin-samples</artifactId>
-	<version>1.2.4.BUILD-SNAPSHOT</version>
+    <version>1.2.4.DAVITA-SNAPSHOT</version>
 
 	<modelVersion>4.0.0</modelVersion>
 	<packaging>pom</packaging>
@@ -73,6 +73,19 @@
 			</plugin>
 		</plugins>
 	</build>
+
+    <distributionManagement>
+        <repository>
+            <id>spring-snapshots</id>
+            <name>DaVita Artifactory-releases</name>
+            <url>https://artifactory.davita.com/artifactory/libs-release-local</url>
+        </repository>
+        <snapshotRepository>
+            <id>spring-releases</id>
+            <name>DaVita Artifactory-snapshots</name>
+            <url>https://artifactory.davita.com/artifactory/libs-snapshot-local</url>
+        </snapshotRepository>
+    </distributionManagement>
 
 	<repositories>
 		<repository>
